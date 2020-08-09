@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './Formulario.module.css';
 import useSelect from '../hooks/useSelect';
+import PropTypes from 'prop-types';
 
 const Formulario = ({guardarCategoria})=>{
 
@@ -21,7 +22,7 @@ const Formulario = ({guardarCategoria})=>{
     const buscarNoticias = e =>{
         e.preventDefault();
         guardarCategoria(categoria);
-    }
+    };
 
     return(
        <div className={`${style.buscador} row`}>
@@ -32,13 +33,17 @@ const Formulario = ({guardarCategoria})=>{
                    <div className="input-field col s12">
                        <input
                             type="submit"
-                            className={`${style.btn_block} btn-larg amber arken-2`}
+                            className={`${style.btn_block} btn-large amber arken-2`}
                             value="Buscar"/>
                    </div>
                </form>
            </div>
        </div> 
     );
+
+Formulario.propTypes ={
+    guardarCategoria: PropTypes.func.isRequired
+    }
 
 }
 export default Formulario;
