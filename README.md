@@ -13,4 +13,4 @@ The page will reload if you make edits.<br />You will also see any lint errors i
 
 
 ### `DATOS DEL REPOSITORIO`
-Desarrollo de ejercicio propuesto por el instructor  en su curso de React - La Guía Completa: Hooks Context Redux MERN +15 Apps disponible en la plataforma de Udemy
+Desarrollo de ejercicio propuesto por el instructor Juan Pablo De la torre Valdez  en su curso de "React - La Guía Completa: Hooks Context Redux MERN +15 Apps" disponible en la plataforma de Udemy https://www.udemy.com/course/react-de-principiante-a-experto-creando-mas-de-10-aplicaciones/
