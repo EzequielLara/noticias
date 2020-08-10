@@ -14,7 +14,8 @@ function App() {
       const url =`http://newsapi.org/v2/top-headlines?country=us&category=${categoria}&apiKey=b6e3f4e4b0194cb0afefac44b1fe8f25`;
       const respuesta = await fetch(url);
       const noticias = await respuesta.json();
-      guardarNoticias(noticias.article);
+      console.log(noticias.articles);
+      guardarNoticias(noticias.articles);
       
     }
     consultarAPI();
@@ -30,7 +31,7 @@ function App() {
             guardarCategoria={guardarCategoria}
           />
 
-          <ListadoNoticias noticias={noticias}/>
+          <ListadoNoticias noticias = {noticias}/>
         </div>
     </Fragment>
   );

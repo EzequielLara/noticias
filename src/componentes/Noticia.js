@@ -18,7 +18,7 @@ const Noticia = ({noticia})=>{
             <div className="card">
                 {imagen}
                 <div className="card-content">
-                        <h3>{title}</h3>
+                        <h5>{title}</h5>
                         <p>{description}</p>
                 </div>
                 <div className="card-action">
